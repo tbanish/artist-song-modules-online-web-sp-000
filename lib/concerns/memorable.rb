@@ -1,5 +1,5 @@
 module Memorable
-  module ClassInstancees
+  module ClassInstances
     def self.reset_all
       self.all.clear
     end
