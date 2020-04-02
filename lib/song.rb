@@ -1,11 +1,9 @@
 require 'pry'
-require_relative '../lib/concerns/memorable'
 
 class Song
-  extend Memorable::ClassMethods
-  
   attr_accessor :name
   attr_reader :artist
+  extend Memorable::ClassMethods
   
   @@songs = []
 
