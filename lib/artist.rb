@@ -6,10 +6,10 @@ class Artist
   extend Memorable::ClassMethods
   extend Findable::ClassMethods
   
-  @@all = []
+  @@artist = []
 
   def initialize
-    @@all << self
+    @@artist << self
     @songs = []
   end
 
@@ -18,7 +18,7 @@ class Artist
   # end
 
   def self.all
-    @@all
+    @@artist
   end
 
   def add_song(song)
